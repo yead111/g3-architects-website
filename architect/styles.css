@@ -31,7 +31,7 @@ nav>ul {
     display: flex;
 }
 
-.nav-title {
+.section-title {
     font-size: 2.7rem;
     font-weight: 700;
     color: #131313;
@@ -113,13 +113,108 @@ main {
     font-weight: 700;
 }
 
-.teams-description {
+.text-light-gray {
     color: #727272;
     font-size: 16px;
     font-weight: 400;
 }
 
+.facts-card-container {
+    display: flex;
+    justify-content: space-around;
+}
 
+.facts-card-container .card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 30px;
+
+}
+
+.facts-card-container .card-stats {
+    font-size: 2.8rem;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.card-title {
+    font-weight: 600;
+    color: #727272;
+    font-size: 1.25rem;
+    margin-top: 5px;
+
+}
+
+.Sponspors {
+    text-align: center;
+}
+
+.Sponspors-logos {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.feature-parent {
+    display: flex;
+    margin-top: 130px;
+    gap: 100px;
+
+}
+
+.feature-content .card {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.year {
+    height: 850px;
+    width: 500px;
+    margin-left: 90px;
+
+
+}
+
+.ten-year {
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 342px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+
+}
+
+.ten-year h2 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.ten-year p {
+    font-size: 1.5rem;
+}
+
+.feature-content .section-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 21px;
+}
+
+footer {
+    text-align: center;
+    border-radius: 8px;
+    background: #FFF4E7;
+    height: 100px;
+    flex-shrink: 0;
+    padding-top: 50px;
+}
 
 
 
@@ -134,26 +229,45 @@ main {
         padding: 20px;
     }
 
-    nav, {
+    nav,
+    .teams-container {
         flex-direction: column;
     }
+
+    .facts-card-container {
+        flex-direction: column;
+
+    }
+
+    .Sponspors {
+        flex-direction: column;
+    }
+
 
     .teams-img-container {
         grid-template-columns: 1fr;
     }
 
-    .teams-content {
+    .teams-content,
+    .facts-card-container {
         padding-left: 20px;
         padding-right: 20px;
     }
-}
-    /* tablet or medium devices*/
-    @media screen and (min-height:576px) and (max-width:960px) {
-        header {
-            padding: 50px;
-        }
 
-        nav, .teams-container {
-            flex-direction: column;
-        }
+    .facts-card-container {
+        gap: 20px;
     }
+}
+
+/* tablet or medium devices*/
+@media screen and (min-height:576px) and (max-width:960px) {
+    header {
+        padding: 50px;
+    }
+
+    nav,
+    .teams-container {
+        flex-direction: column;
+    }
+
+}
